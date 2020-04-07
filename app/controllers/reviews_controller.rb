@@ -6,6 +6,6 @@ class ReviewsController < ApplicationController
         @review = Review.find(params[:id])
     end
     def new
-        @review = Item.new
+        @review = Review.new
     end
 end

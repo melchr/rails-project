@@ -1,0 +1,9 @@
+<%= form_for @review do |f| %>
+   <br><%= f.label :title %>
+    <br><%= f.text_field :title %>
+    <br><%= f.label :date %>
+    <br><%= f.date_select :date %>
+    <br><%= f.label :content %>
+    <br><%= f.text_area :content, :size => "60x12" %>
+    <br><%= submit_tag "Create" %>
+<% end %>
