@@ -1,0 +1,5 @@
+<%= link_to "New review", new_review_path %>
+<% @users.each do |user| %>
+    <%= user.name %>
+    <%= user.reviews %>
+<% end %>
