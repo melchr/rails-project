@@ -3,7 +3,7 @@ class ReviewsController < ApplicationController
         @reviews = Review.all
     end
     def new
-        @review = Review.new
+        @review = Review.create
     end
     def show
         @review = Review.find(params[:id])
