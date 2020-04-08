@@ -1,0 +1,12 @@
+<h1>Albums</h1>
+	<p>
+    Artist<br>
+	Title
+    </p><br>
+	<% @albums.each do |album| %>
+	    <%= album.artist %>
+	    <%= album.title %>
+	    <%= link_to 'Show', album %>
+	    <%= link_to 'Edit', edit_user_album_path(album) %>
+	    <%= link_to 'Destroy', album, method: :delete, data: { confirm: 'Are you sure?' } %>
+	    <% end %>
